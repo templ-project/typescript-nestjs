@@ -1,0 +1,9 @@
+src
+test
+.editorconfig
+.eslintrc.js
+.prettierrc.js
+.release-it.json
+node_modules
+tsconfig*
+*.code-workspace

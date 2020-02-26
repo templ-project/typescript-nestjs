@@ -1,0 +1,12 @@
+{
+    "absolute": true,
+    "blame": true,
+    "ignore": [
+        "**/__snapshots__/**",
+        "**/*.min.js",
+        "**/*.map"
+    ],
+    "output": ".report",
+    "reporters": ["console", "badge"],
+    "threshold": 0.1
+  }
