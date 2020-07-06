@@ -8,6 +8,8 @@
     "prebuild": "rimraf dist",
     "build": "nest build",
     "depcruise": "depcruise --config .dependency-cruiser.js src",
+    "docs": "npx typedoc --out docs --json docs.json --readme none --theme minimal --mode file src",
+    "doc:watch": "nodemon --exec 'npm run doc'",
     "git-hook:pre-commit": "yarn run prettier:write && yarn run lint:write && yarn run jscpd && yarn run depcruise && yarn run test",
     "jscpd": "jscpd ./src --blame",
     "jscpd:html": "yarn run jscpd -- --reporters html",
