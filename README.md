@@ -1,23 +1,23 @@
 # Templ Javascript
 
-[![HitCount](http://hits.dwyl.com/templ-project/javascript.svg)](http://hits.dwyl.com/templ-project/javascript)
-[![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/templ-project/javascript/issues)
-[![TravisCI](https://travis-ci.org/templ-project/javascript.svg?branch=master)](https://travis-ci.org/templ-project/javascript)
+[![HitCount](http://hits.dwyl.com/templ-project/typescript-nestjs.svg)](http://hits.dwyl.com/templ-project/typescript-nestjs)
+[![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/templ-project/typescript-nestjs/issues)
+[![TravisCI](https://travis-ci.org/templ-project/typescript-nestjs.svg?branch=master)](https://travis-ci.org/templ-project/typescript-nestjs)
 ![JSCPD](.jscpd/jscpd-badge.svg?raw=true)
 <!-- CI Badges -->
-<!-- [![CircleCI](https://circleci.com/gh/templ-project/javascript.svg?style=shield)](https://circleci.com/gh/templ-project/javascript) -->
+<!-- [![CircleCI](https://circleci.com/gh/templ-project/typescript-nestjs.svg?style=shield)](https://circleci.com/gh/templ-project/typescript-nestjs) -->
 
-[![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=templ-project_javascript&metric=alert_status)](https://sonarcloud.io/dashboard?id=templ-project_javascript)
-[![SonarCloud Coverage](https://sonarcloud.io/api/project_badges/measure?project=templ-project_javascript&metric=coverage)](https://sonarcloud.io/component_measures/metric/coverage/list?id=templ-project_javascript)
-[![SonarCloud Bugs](https://sonarcloud.io/api/project_badges/measure?project=templ-project_javascript&metric=bugs)](https://sonarcloud.io/component_measures/metric/reliability_rating/list?id=templ-project_javascript)
-[![SonarCloud Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=templ-project_javascript&metric=vulnerabilities)](https://sonarcloud.io/component_measures/metric/security_rating/list?id=templ-project_javascript)
+[![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=templ-project_typescript-nestjs&metric=alert_status)](https://sonarcloud.io/dashboard?id=templ-project_typescript-nestjs)
+[![SonarCloud Coverage](https://sonarcloud.io/api/project_badges/measure?project=templ-project_typescript-nestjs&metric=coverage)](https://sonarcloud.io/component_measures/metric/coverage/list?id=templ-project_typescript-nestjs)
+[![SonarCloud Bugs](https://sonarcloud.io/api/project_badges/measure?project=templ-project_typescript-nestjs&metric=bugs)](https://sonarcloud.io/component_measures/metric/reliability_rating/list?id=templ-project_typescript-nestjs)
+[![SonarCloud Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=templ-project_typescript-nestjs&metric=vulnerabilities)](https://sonarcloud.io/component_measures/metric/security_rating/list?id=templ-project_typescript-nestjs)
 
 <!-- Donation Badges -->
 [![Donate to this project using Patreon](https://img.shields.io/badge/patreon-donate-yellow.svg)](https://patreon.com/dragoscirjan)
 [![Donate to this project using Paypal](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QBP6DEBJDEMV2&source=url)
 
-<img alt="JavaScript Logo" src="https://github.com/templ-project/javascript/blob/master/javascript.svg?raw=true" width="20%" align="right" />
-<img alt="TypeScript Logo" src="https://github.com/templ-project/javascript/blob/master/typescript.svg?raw=true" width="20%" align="right" />
+<img alt="JavaScript Logo" src="https://github.com/templ-project/typescript-nestjs/blob/master/javascript.svg?raw=true" width="20%" align="right" />
+<img alt="TypeScript Logo" src="https://github.com/templ-project/typescript-nestjs/blob/master/typescript.svg?raw=true" width="20%" align="right" />
 
 > *Any fool can write code that a computer can understand. Good programmers write code that humans can understand.* – Martin Fowler
 
@@ -65,7 +65,7 @@ None for now. -->
 ### Installation
 
 ```bash
-git clone https://github.com/templ-project/javascript your_project
+git clone https://github.com/templ-project/typescript-nestjs your_project
 cd your_project
 rm -rf .git
 git init
@@ -121,7 +121,7 @@ npm run release
 
 ## Issues / Support
 
-Add a set of links to the [issues](/templ-project/javascript/issues) page/website, so people can know where to add issues/bugs or ask for support.
+Add a set of links to the [issues](/templ-project/typescript-nestjs/issues) page/website, so people can know where to add issues/bugs or ask for support.
 
 ## License
 
