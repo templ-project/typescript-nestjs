@@ -1,5 +1,5 @@
 {
-  "name": "template-typescript-nestjs",
+  "name": "typescript-nestjs",
   "version": "0.0.1",
   "description": "",
   "author": "",
@@ -7,7 +7,8 @@
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",
-    "git-hook:pre-commit": "npm run prettier:write && npm run lint:write && npm run test",
+    "depcruise": "depcruise --config .dependency-cruiser.js src",
+    "git-hook:pre-commit": "npm run prettier:write && npm run lint:write && npm run jscpd && npm run depcruise && npm run test",
     "jscpd": "jscpd ./src --blame",
     "jscpd:html": "npm run jscpd -- --reporters html",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\"",
@@ -48,11 +49,13 @@
     "@types/supertest": "^2.0.10",
     "@typescript-eslint/eslint-plugin": "^3.6.0",
     "@typescript-eslint/parser": "^3.6.0",
+    "dependency-cruiser": "^9.8.1",
     "eslint": "^7.4.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.22.0",
     "jest": "^26.1.0",
     "jscpd": "^2.0.16",
+    "jscpd-badge-reporter": "^1.1.3",
     "prettier": "^2.0.5",
     "release-it": "^13.6.4",
     "supertest": "^4.0.2",
@@ -78,6 +81,7 @@
     "testEnvironment": "node"
   },
   "gitHooks": {
-    "pre-commit": "npm run git-hook:pre-commit && git add ."
+    "pre-commit": "npm run git-hook:pre-commit && git add .",
+    "commit-msg": "commitlint -e -V "
   }
 }

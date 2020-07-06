@@ -7,30 +7,31 @@ env:
   - LANGUAGE=javascript
   - LANGUAGE=typescript
 node_js: # a good example: https://github.com/pillarjs/router/blob/master/.travis.yml
-  # - "10"
-  # - "11"
+  - "10"
+  - "11"
   - "12"
-  # - "13"
-  # - "14"
-  # - lts/*
-  # - node
+  - "13"
+  - "14"
+  - lts/*
+  - node
 sudo: false
 cache:
   directories:
     - node_modules
 before_script:
-  - npm run change:language -- $LANGUAGE
+  - npm i -g yarn
+  - yarn run change:language -- $LANGUAGE
 scripts:
   - set -e
-  - npm i
-  - npm run prettier:write
-  - npm run lint:write
-  - npm run jscpd
-  - npm run test
-  - npm run test:junit
-  - npm run build
+  - yarn i
+  - yarn run prettier:write
+  - yarn run lint:write
+  - yarn run jscpd
+  - yarn run test
+  - yarn run test:junit
+  - yarn run build
 # after_script:
-  - if [[ $TRAVIS_NODE_VERSION == '12' && $TRAVIS_OS_NAME == 'linux' ]]; then npm run docs;
+  - if [[ $TRAVIS_NODE_VERSION == '12' && $TRAVIS_OS_NAME == 'linux' ]]; then yarn run docs;
     if [[ $LANGUAGE == 'typescript' ]]; then sonar-scanner; fi;
     fi
 notifications:

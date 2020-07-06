@@ -1,7 +1,7 @@
 // .prettierrc.js
 
 module.exports = {
-  parser: "babel",
+  parser: "typescript",
   printWidth: 120,
   semi: true,
   singleQuote: true,
