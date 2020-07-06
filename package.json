@@ -8,16 +8,16 @@
     "prebuild": "rimraf dist",
     "build": "nest build",
     "depcruise": "depcruise --config .dependency-cruiser.js src",
-    "git-hook:pre-commit": "npm run prettier:write && npm run lint:write && npm run jscpd && npm run depcruise && npm run test",
+    "git-hook:pre-commit": "yarn run prettier:write && yarn run lint:write && yarn run jscpd && yarn run depcruise && yarn run test",
     "jscpd": "jscpd ./src --blame",
-    "jscpd:html": "npm run jscpd -- --reporters html",
+    "jscpd:html": "yarn run jscpd -- --reporters html",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\"",
-    "lint:write": "npm run lint -- --fix",
-    "lint:watch": "nodemon --exec \"npm run lint\"",
+    "lint:write": "yarn run lint -- --fix",
+    "lint:watch": "nodemon --exec \"yarn run lint\"",
     "prettier": "prettier",
-    "prettier:check": "npm run prettier -- --list-different \"src/**/*.{ts,tsx}\" && npm run prettier -- --list-different \"test/**/*.{ts,tsx}\"",
-    "prettier:write": "npm run prettier -- --write \"src/**/*.{ts,tsx}\" && npm run prettier -- --write \"test/**/*.{ts,tsx}\"",
-    "prerelease": "npm run build",
+    "prettier:check": "yarn run prettier -- --list-different \"src/**/*.{ts,tsx}\" && yarn run prettier -- --list-different \"test/**/*.{ts,tsx}\"",
+    "prettier:write": "yarn run prettier -- --write \"src/**/*.{ts,tsx}\" && yarn run prettier -- --write \"test/**/*.{ts,tsx}\"",
+    "prerelease": "yarn run build",
     "release": "release-it --ci --no-npm.publish",
     "start": "nest start",
     "start:dev": "nest start --watch",
@@ -39,6 +39,8 @@
     "rxjs": "^6.6.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^9.0.1",
+    "@commitlint/config-conventional": "^9.0.1",
     "@nestjs/cli": "^7.4.1",
     "@nestjs/schematics": "^7.0.1",
     "@nestjs/testing": "^7.3.1",
@@ -81,7 +83,7 @@
     "testEnvironment": "node"
   },
   "gitHooks": {
-    "pre-commit": "npm run git-hook:pre-commit && git add .",
+    "pre-commit": "yarn run git-hook:pre-commit && git add .",
     "commit-msg": "commitlint -e -V "
   }
 }

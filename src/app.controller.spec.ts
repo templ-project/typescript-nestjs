@@ -1,4 +1,5 @@
 import {Test, TestingModule} from '@nestjs/testing';
+
 import {AppController} from './app.controller';
 import {AppService} from './app.service';
 
@@ -11,7 +12,7 @@ describe('AppController', function () {
       providers: [AppService],
     }).compile();
 
-    appController = app.get < AppController > AppController;
+    appController = app.get<AppController>(AppController);
   });
 
   describe('root', function () {
