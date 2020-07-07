@@ -18,6 +18,10 @@ lerna-debug.log*
 /.nyc_output
 junit.xml
 
+# docs
+docs
+docs.json
+
 # IDEs and editors
 /.idea
 .project
