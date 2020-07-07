@@ -25,10 +25,11 @@ scripts:
   - yarn run jscpd
   - yarn run test
   - yarn run test:junit
+  - yarn run test:e2e
   - yarn run build
 # after_script:
   - if [[ $TRAVIS_NODE_VERSION == '12' && $TRAVIS_OS_NAME == 'linux' ]]; then yarn run docs;
-    if [[ $LANGUAGE == 'typescript' ]]; then sonar-scanner; fi;
+      sonar-scanner;
     fi
 notifications:
   email:

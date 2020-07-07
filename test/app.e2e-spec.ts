@@ -1,6 +1,8 @@
 import {Test, TestingModule} from '@nestjs/testing';
 import {INestApplication} from '@nestjs/common';
+
 import * as request from 'supertest';
+
 import {AppModule} from './../src/app.module';
 
 describe('AppController (e2e)', function () {
@@ -17,5 +19,9 @@ describe('AppController (e2e)', function () {
 
   it('/ (GET)', function () {
     return request(app.getHttpServer()).get('/').expect(200).expect('Hello World!');
+  });
+
+  it('/?name=John (GET)', function () {
+    return request(app.getHttpServer()).get('/?name=John').expect(200).expect('Hello John!');
   });
 });
