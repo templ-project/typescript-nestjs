@@ -4,13 +4,13 @@ os:
   - osx
   - windows
 node_js: # a good example: https://github.com/pillarjs/router/blob/master/.travis.yml
-  # - "10"
-  # - "11"
+  - "10"
+  - "11"
   - "12"
-  # - "13"
-  # - "14"
-  # - lts/*
-  # - node
+  - "13"
+  - "14"
+  - lts/*
+  - node
 sudo: false
 cache:
   directories:
