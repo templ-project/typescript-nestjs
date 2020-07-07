@@ -20,7 +20,6 @@ cache:
     - node_modules
 before_script:
   - npm i -g yarn
-  - yarn run change:language -- $LANGUAGE
 scripts:
   - set -e
   - yarn i
