@@ -1,19 +1,16 @@
 language: node_js
 os:
   - linux
-  - osx
-  - windows
-env:
-  - LANGUAGE=javascript
-  - LANGUAGE=typescript
+  # - osx
+  # - windows
 node_js: # a good example: https://github.com/pillarjs/router/blob/master/.travis.yml
-  - "10"
-  - "11"
+  # - "10"
+  # - "11"
   - "12"
-  - "13"
-  - "14"
-  - lts/*
-  - node
+  # - "13"
+  # - "14"
+  # - lts/*
+  # - node
 sudo: false
 cache:
   directories:
@@ -22,7 +19,7 @@ before_script:
   - npm i -g yarn
 scripts:
   - set -e
-  - yarn i
+  - yarn install
   - yarn run prettier:write
   - yarn run lint:write
   - yarn run jscpd
