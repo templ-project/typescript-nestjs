@@ -59,6 +59,7 @@ brew install make git
 #### Known Issues / Troubleshooting
 
 * latest versions of [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin) will dismiss [Node v11.x](https://www.google.com/search?q=node+11&oq=node+11&aqs=chrome..69i57.1064j0j4&sourceid=chrome&ie=UTF-8); change to older version of [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin) on your own risk.
+* Windows tests do pass, however they encounter some issues at caching node_modules afterwards
 
 ### Installation
 
