@@ -1,4 +1,4 @@
-# Templ Javascript
+# Templ NestJs (TypeScript)
 
 [![HitCount](http://hits.dwyl.com/templ-project/typescript-nestjs.svg)](http://hits.dwyl.com/templ-project/typescript-nestjs)
 [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/templ-project/typescript-nestjs/issues)
@@ -16,24 +16,23 @@
 [![Donate to this project using Patreon](https://img.shields.io/badge/patreon-donate-yellow.svg)](https://patreon.com/dragoscirjan)
 [![Donate to this project using Paypal](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QBP6DEBJDEMV2&source=url)
 
-<img alt="JavaScript Logo" src="https://github.com/templ-project/typescript-nestjs/blob/master/javascript.svg?raw=true" width="20%" align="right" />
-<img alt="TypeScript Logo" src="https://github.com/templ-project/typescript-nestjs/blob/master/typescript.svg?raw=true" width="20%" align="right" />
+<img alt="JavaScript Logo" src="https://docs.nestjs.com/assets/logo-small.svg" width="20%" align="right" />
 
 > *Any fool can write code that a computer can understand. Good programmers write code that humans can understand.* – Martin Fowler
 
-> **javascript** is a template project, designed by [Templ Project](http://templ-project.github.io).
+> **typescript-nestjs** is a template project, designed by [Templ Project](http://templ-project.github.io).
 >
-> **javascript** includes instructions for initializing a new
-> **JavaScript/[TypeScript](https://www.typescriptlang.org/)** project, and configuring it for development, unit
+> **typescript-nestjs** includes instructions for initializing a new
+> **[NestJs](https://nestjs.com/)** project, and configuring it for development, unit
 > testing as well as code linting and analysis.
 >
-> **javascript** implements:
+> **typescript-nestjs** implements:
 >
 > - [jscpd](https://github.com/kucherenko/jscpd), [dependency-cruiser](https://github.com/sverweij/dependency-cruiser) for code analisys
 > - [prettier](https://prettier.io/) for code formatting
 > - [eslint](https://eslint.org/) for linting
 >
-> By default, this implementation uses [npm](https://www.npmjs.com/), but you can easily change it to [yarn](https://yarnpkg.com/) or [pnpm](https://pnpm.js.org/) or any other package manager.
+> By default, this implementation uses [yarn](https://yarnpkg.com/), but you can easily change it to [npm](https://www.npmjs.com/) or [pnpm](https://pnpm.js.org/) or any other package manager.
 
 ## Getting Started
 
@@ -73,11 +72,8 @@ git add remote origin https://url/to/your/project/repository
 git add .
 git commit -am "init"
 git push origin master
-npm run change:language -- javascript # to use javascript
-# or
-# npm run change:language -- typescript # to use typescript
-npm install
-# yarn install
+yarn install
+# npm install
 # pnpm install
 ```
 
@@ -95,16 +91,16 @@ npm install
 
 ### Testing
 
-Run unit tests using `npm run test`.
+Run unit tests using `yarn run test`.
 
 Testing is currently set to use unittest.
 
-#### Single Tests
+#### E2E Tests
 
-Run single unit tests file, by calling `make test:single -- test/path/to/file.test.js`
+Run single unit tests file, by calling `yarn run test:single -- test/path/to/file.test.js`
 
 ```bash
-make test:single -- test/path/to/index.test.js
+yarn run test:single -- test/path/to/index.test.js
 ```
 
 ### Deployment
@@ -191,7 +187,7 @@ which is also included in
 -->
 <!-- TOC -->
 
-- [Templ Javascript](#templ-javascript)
+- [Templ NestJs (TypeScript)](#templ-nestjs-typescript)
   - [Getting Started](#getting-started)
     - [Prerequisites / Dependencies](#prerequisites--dependencies)
         - [For Windows](#for-windows)
@@ -200,7 +196,7 @@ which is also included in
     - [Development](#development)
       - [Requirements](#requirements)
     - [Testing](#testing)
-      - [Single Tests](#single-tests)
+      - [E2E Tests](#e2e-tests)
     - [Deployment](#deployment)
   - [Authors](#authors)
   - [Issues / Support](#issues--support)
