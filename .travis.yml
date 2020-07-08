@@ -12,9 +12,9 @@ node_js: # a good example: https://github.com/pillarjs/router/blob/master/.travi
   - lts/*
   - node
 sudo: false
-# cache:
-#   directories:
-#     - node_modules
+cache:
+  directories:
+    - node_modules
 before_script:
   - npm i -g yarn
 scripts:
