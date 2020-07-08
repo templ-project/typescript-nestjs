@@ -56,10 +56,9 @@ sudo apt-get install git make -y
 # i.e mac OS
 brew install make git
 ```
-
 <!-- #### Known Issues / Troubleshooting
 
-None for now. -->
+*  -->
 
 ### Installation
 
@@ -95,13 +94,17 @@ Run unit tests using `yarn run test`.
 
 Testing is currently set to use unittest.
 
-#### E2E Tests
+#### Single Tests
 
 Run single unit tests file, by calling `yarn run test:single -- test/path/to/file.test.js`
 
 ```bash
 yarn run test:single -- test/path/to/index.test.js
 ```
+
+#### E2E Tests
+
+Run end to end tests using `yarn run test:e2e`.
 
 ### Deployment
 
@@ -196,6 +199,7 @@ which is also included in
     - [Development](#development)
       - [Requirements](#requirements)
     - [Testing](#testing)
+      - [Single Tests](#single-tests)
       - [E2E Tests](#e2e-tests)
     - [Deployment](#deployment)
   - [Authors](#authors)
@@ -203,7 +207,7 @@ which is also included in
   - [License](#license)
 - [Project Title](#project-title)
   - [Getting Started](#getting-started-1)
-    - [Prereqiusites / Dependencies](#prereqiusites--dependencies)
+    - [Prerequisites / Dependencies](#prerequisites--dependencies-1)
       - [For Windows](#for-windows-1)
       - [For Linux](#for-linux)
       - [Known Issues / Troubleshooting](#known-issues--troubleshooting)
@@ -225,7 +229,7 @@ which is also included in
 
 ## Getting Started
 
-### Prereqiusites / Dependencies
+### Prerequisites / Dependencies
 
 What things you need to install the software and how to install them (based on each OS type). 
 
