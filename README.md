@@ -56,9 +56,9 @@ sudo apt-get install git make -y
 # i.e mac OS
 brew install make git
 ```
-<!-- #### Known Issues / Troubleshooting
+#### Known Issues / Troubleshooting
 
-*  -->
+* latest versions of [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin) will dismiss [Node v11.x](https://www.google.com/search?q=node+11&oq=node+11&aqs=chrome..69i57.1064j0j4&sourceid=chrome&ie=UTF-8); change to older version of [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin) on your own risk.
 
 ### Installation
 
@@ -195,6 +195,7 @@ which is also included in
     - [Prerequisites / Dependencies](#prerequisites--dependencies)
         - [For Windows](#for-windows)
         - [For Linux/Unix/OSX](#for-linuxunixosx)
+      - [Known Issues / Troubleshooting](#known-issues--troubleshooting)
     - [Installation](#installation)
     - [Development](#development)
       - [Requirements](#requirements)
@@ -210,7 +211,7 @@ which is also included in
     - [Prerequisites / Dependencies](#prerequisites--dependencies-1)
       - [For Windows](#for-windows-1)
       - [For Linux](#for-linux)
-      - [Known Issues / Troubleshooting](#known-issues--troubleshooting)
+      - [Known Issues / Troubleshooting](#known-issues--troubleshooting-1)
     - [Installation](#installation-1)
       - [Say what the step will be](#say-what-the-step-will-be)
       - [And repeat](#and-repeat)
